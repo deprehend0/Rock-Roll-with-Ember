@@ -16,5 +16,9 @@ export default Ember.Route.extend({
       band.get('songs').pushObject(song);
       controller.set('title', '');
     }
+  },
+
+  resetController: function(controller) {
+    controller.set('songCreationStarted', false);
   }
 });
